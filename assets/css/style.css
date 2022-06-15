@@ -75,7 +75,7 @@ body {
     font-family: 'Sarala', sans-serif;
     font-weight: 400px;
     font-size: 24px;
-    color: #ECD6C4
+    color: #ECD6C4;
 }
 
 .main-content-written-button {
@@ -88,7 +88,7 @@ body {
     border-radius: 20px;
     box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
     border: none;
-    transition: transform 700ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-content-written-button:hover {
@@ -150,4 +150,149 @@ body {
     height: 48px;
     display: block;
     margin: 0 auto;
+}
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center; /*eixo y*/
+    justify-content: center; /*eixo x*/
+}
+
+.left-login /*title*/ {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.left-login h1 {
+    font-family: 'Sarala', sans-serif;
+    font-size: 3vw;
+    color: #FFF2E7;
+}
+
+.login-img {
+    width: 25vw;
+    transform: translateY(0px);
+    animation: float 5s ease-in-out infinite;
+}
+
+.right-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-login {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: linear-gradient(68.15deg, #2F2325 16.62%, #7c5046 85.61%);
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.25);
+}
+
+.card-login h1 {
+    font-family: 'Righteous', cursive;
+    color: #FFF2E7;
+    font-size: 45px;
+    letter-spacing: 4px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield {
+    font-family: 'Sarala', sans-serif;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield > input {
+    font-family: 'Sarala', sans-serif;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #ECD6C4; /*COR DA PARTE QUE ESCREVE*/
+    color: #2F2325;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+}
+
+.textfield > label {
+    font-family: 'Sarala', sans-serif;
+    color: #ECD6C4;
+    margin-bottom: 10px;
+}
+
+.textfield > input::placeholder {
+    font-family: 'Sarala', sans-serif;
+    color: #2F2325;
+}
+
+a {
+    color: inherit;
+}
+
+.btn-login {
+    font-family: 'Righteous', cursive;
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 20px;
+    letter-spacing: 6px;
+    color: #2F2325; /*COR DA ESCRITA LOGIN DO BOTAO*/
+    cursor: pointer;
+    background: #ECD6C4; /*COR BOTAO*/
+    transition: transform 400ms;
+}
+
+.btn-login:hover {
+    box-shadow: 0px 10px 40px -12px #d4b8a1;
+    transform: scale(1.04);
+    transition: 300ms;
+}
+
+@media only screen and (max-width: 950px) {
+    .card-login {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main-login {
+        flex-direction: column;
+    }
+    .left-login h1 {
+        display: none
+    }
+    .left-login {
+        width: 100%;
+        height: auto;
+    }
+    .right-login {
+        width: 100%;
+        height: auto;
+    }
+    .login-img {
+        width: 50vw;
+    }
 }
