@@ -1,0 +1,25 @@
+{
+  "name": "landing-page-ballerini",
+  "version": "1.0.0",
+  "description": "Projeto realizado no vídeo sobre HTML e CSS da programadora e youtuber <a href=\"https://www.youtube.com/c/rafaellaballerini\">Rafaela Ballerini</a>.\r Todo o layout, cores e imagens foram retirados do projeto do figma desenvolvido pela Rafa.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aarthgmendes/BalleBot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aarthgmendes/BalleBot/issues"
+  },
+  "homepage": "https://github.com/aarthgmendes/BalleBot#readme",
+  "dependencies": {
+    "body-parser": "1.18.2",
+    "express": "4.16.3"
+  }
+}
